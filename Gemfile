@@ -13,6 +13,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'bootstrap_form'
 gem 'devise'
+gem 'icomoon-rails'
 
 group :development do
   gem 'better_errors'

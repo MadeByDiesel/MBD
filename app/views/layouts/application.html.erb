@@ -3,15 +3,17 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= content_for?(:title) ? yield(:title) : "Mbd" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Mbd" %>">
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Made By Diesel | Interactive Agency" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
   </head>
-  <body id="page-top" class="index">
-    <header>
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
       <%= render 'layouts/navigation' %>
-    </header>
+
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
